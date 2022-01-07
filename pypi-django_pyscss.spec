@@ -4,7 +4,7 @@
 #
 Name     : pypi-django_pyscss
 Version  : 2.0.2
-Release  : 55
+Release  : 56
 URL      : https://files.pythonhosted.org/packages/4b/7f/d771802305184aac6010826f60a0b2ecaa3f57d19ab0e405f0c8db07e809/django-pyscss-2.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/4b/7f/d771802305184aac6010826f60a0b2ecaa3f57d19ab0e405f0c8db07e809/django-pyscss-2.0.2.tar.gz
 Summary  : Makes it easier to use PySCSS in Django.
@@ -13,19 +13,11 @@ License  : BSD-2-Clause
 Requires: pypi-django_pyscss-license = %{version}-%{release}
 Requires: pypi-django_pyscss-python = %{version}-%{release}
 Requires: pypi-django_pyscss-python3 = %{version}-%{release}
-BuildRequires : Pillow-python
 BuildRequires : buildreq-distutils3
-BuildRequires : django-appconf
-BuildRequires : django-discover-runner
-BuildRequires : django_compressor
-BuildRequires : pathlib
-BuildRequires : pyScss
 BuildRequires : pypi(django)
-BuildRequires : pypi(funcsigs)
-BuildRequires : pypi(mock)
 BuildRequires : pypi(pyscss)
-BuildRequires : pypi(pytest)
-BuildRequires : pypi(six)
+BuildRequires : pytest
+BuildRequires : python-mock
 
 %description
 -------------
@@ -70,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641516538
+export SOURCE_DATE_EPOCH=1641543120
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "

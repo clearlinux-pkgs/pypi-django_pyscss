@@ -1,13 +1,2 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
-django_compressor
-pyScss
-pypi(django)
-pypi(six)
-django-discover-runner
-Pillow-python
-django-appconf
-pypi(mock)
-pypi(funcsigs)
-pathlib
-pypi(pytest)
