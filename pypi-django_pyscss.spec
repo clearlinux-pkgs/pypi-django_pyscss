@@ -4,7 +4,7 @@
 #
 Name     : pypi-django_pyscss
 Version  : 2.0.2
-Release  : 56
+Release  : 57
 URL      : https://files.pythonhosted.org/packages/4b/7f/d771802305184aac6010826f60a0b2ecaa3f57d19ab0e405f0c8db07e809/django-pyscss-2.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/4b/7f/d771802305184aac6010826f60a0b2ecaa3f57d19ab0e405f0c8db07e809/django-pyscss-2.0.2.tar.gz
 Summary  : Makes it easier to use PySCSS in Django.
@@ -16,8 +16,8 @@ Requires: pypi-django_pyscss-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 BuildRequires : pypi(django)
 BuildRequires : pypi(pyscss)
-BuildRequires : pytest
-BuildRequires : python-mock
+BuildRequires : pypi-mock
+BuildRequires : pypi-pytest
 
 %description
 -------------
@@ -62,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641543120
+export SOURCE_DATE_EPOCH=1641861066
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
